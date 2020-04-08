@@ -13,6 +13,7 @@ www-data,/var/www,cloudflare,173.216.23.65,"BF0Q=1; IDSs=1; TY1N=1; 1uC8=1; tEJH
 #,173.245.52.157,"Wed, 08 Apr 2020 17:26:46 +0000"
 #,173.245.52.157,"Wed, 08 Apr 2020 17:27:59 +0000"
 #,173.245.52.157,"Wed, 08 Apr 2020 17:28:26 +0000"
+<<<<<<< HEAD
 #,108.162.219.102,"Wed, 08 Apr 2020 18:15:13 +0000"
 "Page Closed",162.158.63.6,"Wed, 08 Apr 2020 18:15:38 +0000"
 "Page Closed",108.162.219.102,"Wed, 08 Apr 2020 18:15:51 +0000"
@@ -39,3 +40,7 @@ https://examences-chounded.icu/click,108.162.219.4,"Wed, 08 Apr 2020 18:21:16 +0
 https://examences-chounded.icu/click,162.158.62.105,"Wed, 08 Apr 2020 18:24:06 +0000"
 "Page Closed",108.162.219.4,"Wed, 08 Apr 2020 18:24:12 +0000"
 https://examences-chounded.icu/click,108.162.219.4,"Wed, 08 Apr 2020 18:24:20 +0000"
+=======
+>>>>>>> e6dc464ac85dd22d666ae8d529514b0bf3f66365
+"Page Closed",162.158.62.105,"Wed, 08 Apr 2020 18:24:34 +0000"
+#,108.162.219.102,"Wed, 08 Apr 2020 18:24:50 +0000"
