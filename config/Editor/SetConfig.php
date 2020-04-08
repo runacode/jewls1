@@ -16,6 +16,8 @@ if (isset($_REQUEST['SetContent'])) {
     SetCurrentValueByDataPosition("CloakerID", $_REQUEST['overwrite'], $_POST['CloakerID']);
     SetCurrentValueByDataPosition("EditMode", $_REQUEST['overwrite'], $_POST['EditMode']);
     SetCurrentValueByDataPosition("AffLink", $_REQUEST['overwrite'], $_POST['AffLink']);
+    SetCurrentValueByDataPosition("VoluumCpid", $_REQUEST['overwrite'], $_POST['VoluumCpid']);
+    unset($_POST['VoluumCpid']);
     unset($_POST['AffLink']);
     unset($_POST['EditMode']);
     unset($_POST['CssIn']);
@@ -42,6 +44,8 @@ $CloakerPath = $overwritedata['CloakerPath'];
 $CloakerID = $overwritedata['CloakerID'];
 $EditorPassword = $overwritedata['EditMode'];
 $AffLink = $overwritedata['AffLink'];
+$VoluumCpid = $overwritedata['VoluumCpid'];
+
 
 ?>
 <!DOCTYPE html>
@@ -61,24 +65,28 @@ $AffLink = $overwritedata['AffLink'];
 <form method="post" enctype="multipart/form-data">
 
     <div id="TextNodes">
+        <label for="VoluumCpid">Config Node (VoluumCpid)
+            VoluumCpid
+        </label>
+        <input name="VoluumCpid" value="<?php echo $VoluumCpid ?>"/>
         <label for="EditMode">Config Node (AffLink)
             AffLink
         </label>
-        <input name="AffLink" value="<?php echo  $AffLink ?>" />
+        <input name="AffLink" value="<?php echo $AffLink ?>"/>
         <label for="EditMode">Config Node (EditMode Password)
             EditMode
         </label>
-        <input name="EditMode" value="<?php echo  $EditorPassword ?>" />
+        <input name="EditMode" value="<?php echo $EditorPassword ?>"/>
         <label for="CloakerPath">Config Node (CloakerPath)
             Absolute Path from webroot to dirty page aka
 
             /page2/page3/index.php
         </label>
-        <input name="CloakerPath" value="<?php echo  $CloakerPath ?>" />
+        <input name="CloakerPath" value="<?php echo $CloakerPath ?>"/>
         <label for="CloakerID">Config Node (CloakerID)
             Cloaker ID
         </label>
-        <input name="CloakerID" value="<?php echo  $CloakerID ?>" />
+        <input name="CloakerID" value="<?php echo $CloakerID ?>"/>
         <?php foreach ($ConfigItems as $Key) {
             $Text = $data->$Key;
             ?>
